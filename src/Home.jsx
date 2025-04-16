@@ -1,12 +1,13 @@
 const Home = () => {
-    return (
-      <div style={{ padding: "20px", color: "white" }}>
-        <h1>Лабораторна робота №5</h1>
-        <p>Ця лабораторна робота демонструє маршрутизацію в React.</p>
-      </div>
-    );
-  };
-  
-  export default Home;
+  return (
+    <div style={{ color: "white", padding: "20px" }}>
+      <h1>Лабораторна робота №6</h1>
+      <p>Ця лабораторна демонструє анімовані світлофори в React.</p>
+    </div>
+  );
+};
+
+export default Home;
+
   
   

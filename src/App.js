@@ -6,20 +6,26 @@ import Vertical from "./Vertical";
 
 function App() {
   return (
-    <div style={{ backgroundColor: "#222", minHeight: "100vh" }}>
-      <Router>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/horizontal" element={<Horizontal />} />
-          <Route path="/vertical" element={<Vertical />} />
-        </Routes>
-      </Router>
-    </div>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/horizontal" element={<Horizontal />} />
+        <Route path="/vertical" element={<Vertical />} />
+      </Routes>
+    </Router>
   );
 }
 
 export default App;
+
+
+
+
+
+
+
+
 
 
 

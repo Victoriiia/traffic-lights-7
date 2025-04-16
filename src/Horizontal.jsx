@@ -1,13 +1,21 @@
 import Light from "./Light";
+import "./App.css";
 
-const Horizontal = () => {
-  return (
-    <div style={{ display: "flex", justifyContent: "center", gap: "10px", marginTop: "50px" }}>
-      <Light color="red" />
-      <Light color="yellow" />
-      <Light color="green" />
-    </div>
-  );
-};
+const Horizontal = () => (
+  <div className="traffic-container horizontal">
+    <Light color="red" onClick={() => {}} />
+    <Light color="yellow" onClick={() => {}} />
+    <Light color="green" onClick={() => {}} />
+  </div>
+);
 
 export default Horizontal;
+
+
+
+
+
+
+
+
+

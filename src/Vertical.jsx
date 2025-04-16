@@ -1,14 +1,19 @@
 import Light from "./Light";
+import "./App.css";
 
-const Vertical = () => {
-  return (
-    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "10px", marginTop: "50px" }}>
-      <Light color="red" />
-      <Light color="yellow" />
-      <Light color="green" />
-    </div>
-  );
-};
+const Vertical = () => (
+  <div className="traffic-container vertical">
+    <Light color="red" onClick={() => {}} />
+    <Light color="yellow" onClick={() => {}} />
+    <Light color="green" onClick={() => {}} />
+  </div>
+);
 
 export default Vertical;
+
+
+
+
+
+
 

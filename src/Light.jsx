@@ -1,21 +1,26 @@
-const Light = ({ color }) => {
-    const backgroundColors = {
-      red: "red",
-      yellow: "yellow",
-      green: "green",
-    };
-  
-    return (
-      <div
-        style={{
-          width: "100px",
-          height: "100px",
-          borderRadius: "50%",
-          backgroundColor: backgroundColors[color],
-        }}
-      ></div>
-    );
-  };
-  
-  export default Light;
+import { motion } from "framer-motion";
+
+const Light = ({ color, onClick }) => {
+  return (
+    <motion.div
+      className="light"
+      style={{ backgroundColor: color }}
+      whileTap={{ scale: 1.2, opacity: 0.6 }}
+      transition={{ duration: 0.3 }}
+      onClick={onClick}
+    />
+  );
+};
+
+export default Light;
+
+
+
+
+
+
+
+
+
+
   
