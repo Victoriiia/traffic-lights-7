@@ -1,18 +1,21 @@
-// src/Light.jsx
-import PropTypes from "prop-types";
-
-const Light = ({ tlColor, onClick }) => {
-  return (
-    <div
-      className={`light ${tlColor}`}
-      onClick={onClick}
-    />
-  );
-};
-
-Light.propTypes = {
-  tlColor: PropTypes.string.isRequired,
-  onClick: PropTypes.func.isRequired,
-};
-
-export default Light;
+const Light = ({ color }) => {
+    const backgroundColors = {
+      red: "red",
+      yellow: "yellow",
+      green: "green",
+    };
+  
+    return (
+      <div
+        style={{
+          width: "100px",
+          height: "100px",
+          borderRadius: "50%",
+          backgroundColor: backgroundColors[color],
+        }}
+      ></div>
+    );
+  };
+  
+  export default Light;
+  
