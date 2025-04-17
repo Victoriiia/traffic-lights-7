@@ -1,0 +1,19 @@
+{
+  "trafficLights": [
+    {
+      "id": "1",
+      "color": "red",
+      "clicks": 9
+    },
+    {
+      "id": "2",
+      "color": "yellow",
+      "clicks": 7
+    },
+    {
+      "id": "3",
+      "color": "green",
+      "clicks": 7
+    }
+  ]
+}

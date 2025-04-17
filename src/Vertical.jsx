@@ -1,15 +1,26 @@
+import { useContext } from "react";
 import Light from "./Light";
-import "./App.css";
+import { TrafficLightsContext } from "./context/TrafficLightsContext";
 
-const Vertical = () => (
-  <div className="traffic-container vertical">
-    <Light color="red" onClick={() => {}} />
-    <Light color="yellow" onClick={() => {}} />
-    <Light color="green" onClick={() => {}} />
-  </div>
-);
+const Vertical = () => {
+  const { lights, incrementClick } = useContext(TrafficLightsContext);
+
+  return (
+    <div className="traffic-container vertical">
+      {lights.map(light => (
+        <Light
+          key={light.id}
+          color={light.color}
+          onClick={() => incrementClick(light.color)}
+        />
+      ))}
+    </div>
+  );
+};
 
 export default Vertical;
+
+
 
 
 
